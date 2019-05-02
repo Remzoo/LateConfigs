@@ -21,7 +21,7 @@ public Plugin myinfo =
 {
 	name = "Late configs",
 	author = PLUGIN_AUTHOR,
-	description = "Runs convars after a specified time",
+	description = "Runs comamnds after a specified time from map start",
 	version = PLUGIN_VERSION,
 	url = "https://strefagier.com.pl"
 };
@@ -29,7 +29,7 @@ public Plugin myinfo =
 public void OnPluginStart()
 {
 	cvEnabled = CreateConVar("sm_lateconfigs_enabled", "1", "Determines if enabled or not", 0, true, 0.0, true, 1.0);
-	cvDelay = CreateConVar("sm_lateconfigs_delay", "3", "Time after convars will be executed", 0, true, 0.0);
+	cvDelay = CreateConVar("sm_lateconfigs_delay", "3", "Time in seconds after comamnds will be executed", 0, true, 0.0);
 	
 	RegAdminCmd("sm_lateconfigs_reload", Command_Reload, ADMFLAG_RCON, "Reloads configs");
 	RegAdminCmd("sm_lateconfigs_run", Command_Run, ADMFLAG_RCON, "Runs configs - for testing purposes");
