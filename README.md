@@ -18,6 +18,6 @@ The plugin can be controlled by following convars:
 * `sm_lateconfigs_delay` - default value **3** - Time in seconds after commands will be executed
 
 ## Admin Commands
-Administrator with **ROOT** privileges can run following commands:
+Administrator with **RCON** privileges can run following commands:
 * `sm_lateconfigs_reload` - Reloads configs
 * `sm_lateconfigs_run` - Runs configs - for testing purposes
